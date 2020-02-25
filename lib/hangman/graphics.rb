@@ -18,6 +18,19 @@ HANG
   /   \\
 WIN
 
+     ALIVE2 = <<WIN2
+  \(•_•)
+  (  (>
+  /   \\
+
+WIN2
+
+     ALIVE3 = <<WIN3
+  (•_•)
+  <)  )>
+  /   \\
+WIN3
+
     OBFUSCATION_CHAR = "👾"
 
     def self.clear_screen
@@ -39,6 +52,11 @@ WIN
       end
 
       obfuscated
+    end
+
+    def self.give_up
+      puts "Goodbye cruel world!"
+      sleep 0.5
     end
   end
 end
